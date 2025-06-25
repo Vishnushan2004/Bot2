@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 
 // MongoDB setup (free database)
-mongoose.connect(process.env.MONGODB_URI, { 
+mongoose.connect(process.env.mongodb+srv://cluster0.zzj0lem.mongodb.net/?authSource=%24external&authMechanism=MONGODB-X509&retryWrites=true&w=majority&appName=Cluster0, { 
   useNewUrlParser: true, 
   useUnifiedTopology: true 
 });
@@ -20,7 +20,7 @@ const userSchema = new mongoose.Schema({
 });
 const User = mongoose.model('User', userSchema);
 
-const bot = new Telegraf(process.env.TELEGRAM_BOT_TOKEN);
+const bot = new Telegraf(process.env.7427825627:AAGg3fAuRUndl5lV1KL7XlWvHDVHt2guiJI);
 
 // Start command
 bot.start(async (ctx) => {
